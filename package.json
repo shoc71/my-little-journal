@@ -1,0 +1,33 @@
+{
+  "name": "my-little-journal",
+  "version": "1.0.0",
+  "description": "purpose? - for me to write stories of my own and save them with my own custom formatting. - A good program enables and encourages creation (not causes issues and technological failures).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server/server.js",
+    "build": "npm install && npm install --prefix client && npm run build --prefix client",
+    "start": "NODE_ENV=production node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoc71/my-little-journal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/shoc71/my-little-journal/issues"
+  },
+  "homepage": "https://github.com/shoc71/my-little-journal#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
