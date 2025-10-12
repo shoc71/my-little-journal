@@ -9,6 +9,11 @@
     padding: 10px 20px;
 }
 
+.objective {
+    justify-content: space-between;
+    align-items: center;
+}
+
 .authi-body {
   margin: 0;
   height: 100vh; /* full viewport height */
@@ -30,3 +35,10 @@
     padding: 1rem;
     border-radius: 2px;
 }
+
+/* .story-card {
+    width: 18rem;
+    text-align: left;
+    padding: 1rem;
+    border-radius: 2px;
+} */
