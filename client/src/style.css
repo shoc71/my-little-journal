@@ -1,3 +1,32 @@
 .title {
     text-align: center;
 }
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.authi-body {
+  margin: 0;
+  height: 100vh; /* full viewport height */
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+}
+
+#auth-links a,
+#user-info button {
+    margin-left: 15px;
+    text-decoration: none;
+
+}
+
+#authi {
+    width: 18rem;
+    text-align: left;
+    padding: 1rem;
+    border-radius: 2px;
+}

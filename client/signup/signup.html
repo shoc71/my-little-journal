@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="./src/signup.css">
+    <title>Sign-up</title>
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="title">Sign-up</h1>
+
+
+
+        <div id="auth-links">
+            <a href="../login/login.html">Login</a>
+            <a href="../index.html">Return Home</a>
+        </div>
+
+        <div id="user-info" style="display: none;">
+            <span id="welcome"></span>
+            <button id="logout-btn">Logout</button>
+        </div>
+        
+    </header>
+
+    <div class="authi-body">
+            <div class="card" id="authi">
+                <div class="form-group">
+                    <label class="text-class">Username</label>
+                    <input type="text" placeholder="username" required>
+                </div>
+                <div class="form-group">
+                    <label class="text-class">Email</label>
+                    <input type="text" placeholder="email" required>
+                </div>
+                <div class="form-group position-relative">
+                    <label class="text-class">Password</label>
+                    <input 
+                        type="password" 
+                        id="authi-pass" 
+                        placeholder="password" 
+                        required
+                    >
+                    <i 
+                        class="bi bi-eye position-absolute" 
+                        id="toggle-pass" 
+                        style="right: 10px; top: 38px; cursor: pointer; opacity: 0.6;">
+                    </i>
+                    <!-- <button type="button" onclick="toggleVisibility()">Eye</button> -->
+                </div>
+            </div>
+        </div>
+    
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../src/index.js"></script>
+    <script src="./src/signup.js"></script>
+</body>
+</html>
