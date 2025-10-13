@@ -23,7 +23,36 @@ logoutBtn.addEventListener("click", () => {
     location.reload(); // reload to update UI
 });
 
+// darkmode
+const toggleButton = document.getElementById('toggle');
+var imageDarkModeChange = document.getElementById('darkmode')
 
+toggleButton.addEventListener('click', () => {
+    const body = document.body;
+
+    if (body.classList.contains('dark')) {
+        body.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        imageDarkModeChange.src = "https://cdn-icons-png.flaticon.com/512/169/169367.png"; // Light mode icon
+    } else {
+        body.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        imageChange.src = "https://purepng.com/public/uploads/large/purepng.com-moonnaturelightnightmoon-961524672147abmbw.png"; // Dark mode icon
+    }
+})
+
+window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark');
+        imageDarkModeChange.src = "https://purepng.com/public/uploads/large/purepng.com-moonnaturelightnightmoon-961524672147abmbw.png"; // Dark mode icon
+    } else {
+        imageDarkModeChange.src = "https://cdn-icons-png.flaticon.com/512/169/169367.png"; // Light mode icon
+    }
+})
+
+// document.getElementById()
 
 // authi
 function toggleVisibility() {
