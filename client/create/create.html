@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../src/style.css">
-    <link rel="stylesheet" href="./src/create.css">
+    <link rel="stylesheet" href="/client/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/client/src/style.css">
+    <link rel="stylesheet" href="/client/create/src/create.css">
     <title>New Page</title>
 </head>
-<body class="main">
+<body class="dark">
     <header class="main-header">
         <h1 class="title">
-            <a href="../index.html">My Little Journal</a>
+            <a href="/client/index.html" class="">My Little Journal</a>
         </h1>
 
 
@@ -40,14 +40,54 @@
         
     </header>
 
-    <div class="card w-auto" style="margin: 1rem; height: auto;">
-        <div class="card-body">
+    <main>
+        <section class="card m-4 p-4 new-card border-secondary">
+            <h4 class="card-title text-center">Create New Story</h4>
+            <div class="card-body">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Logline</span>
+                    </div>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="logling"
+                        placeholder="Setting, Stakes, Pro-&-Antagonist, Action"
+                        required
+                    >
+                </div>
+                
+                <!-- TODO: Characters, Settings, Plot Points, Char. Traits -->
 
-        </div>
-    </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary" type="button">Add Character</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="First Name" required>
+                    <input type="text" class="form-control" placeholder="Last Name">
+                </div>
 
-    <script src="../src/index.js"></script>
-    <script src="./src/create.js"></script>
-    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Addtional Notes</span>
+                    </div>
+                    <textarea 
+                        id="additional-notes" 
+                        class="form-control" 
+                        placeholder="Any Notes"
+                        aria-label="Addtional Notes"
+                    ></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-4">
+        <p>Footer</p>
+    </footer>
+
+    <script src="/client/src/index.js"></script>
+    <script src="/client/create/src/create.js"></script>
+    <script src="/client/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>

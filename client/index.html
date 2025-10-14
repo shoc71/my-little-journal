@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="/client/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/client/src/style.css">
     <title>Homepage</title>
 </head>
 <body>
@@ -13,8 +13,8 @@
 
         <div class="d-flex align-items-center">
             <div id="auth-links">
-                <a href="./login/login.html">Login</a>
-                <a href="./signup/signup.html">Sign-up</a>
+                <a href="/client/login/login.html">Login</a>
+                <a href="/client/signup/signup.html">Sign-up</a>
             </div>
 
             <div id="user-info" style="display: none;">
@@ -25,7 +25,7 @@
             <div class="mx-2" style="justify-content: center;">
                 <button class="btn btn-light" id="toggle">
                     <img 
-                        src="https://cdn-icons-png.flaticon.com/512/169/169367.png"
+                        src="https://purepng.com/public/uploads/large/purepng.com-moonnaturelightnightmoon-961524672147abmbw.png"
                         alt="moon icon"
                         id="darkmode"
                         style="width: 2rem; height: 2rem;"
@@ -37,7 +37,7 @@
 
     <main>
         <div class="objective mx-2 d-flex">
-            <a href="./create/create.html" class="btn btn-success ml-3">Create New Story</a>
+            <a href="/client/create/create.html" class="btn btn-success ml-3">Create New Story</a>
             <form class="form-inline">
                 <input type="search" class="form-control mr-sm-2" placeholder="Search and Filter">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -46,12 +46,13 @@
         
 
         <div class="d-flex flex-wrap">
-            <section class="card m-4 story-card">
+            <section class="card border-secondary m-4 story-card">
                 <img src="" alt="Random Image Placed here" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Story 1</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Author(s) Name</h6>
-                    <p class="card-text">Logline, Strong Question, Last Chapter Notes,
+                    <p class="card-text">
+                        Logline, Strong Question, Last Chapter Notes,
                         To be Placed here
                     </p>
                 </div>
@@ -64,7 +65,7 @@
                 </div>
             </section>
 
-            <div class="card m-4 story-card">
+            <section class="card border-secondary m-4 story-card">
                 <img src="" alt="Random Image Placed here" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Story 2</h5>
@@ -82,9 +83,9 @@
                     <a href="#" class="badge badge-warning">Horror</a>
                     <a href="#" class="badge badge-danger">Graphic</a>
                 </div>
-            </div>
+            </section>
 
-            <div class="card m-4 story-card">
+            <section class="card border-secondary m-4 story-card">
                 <img src="" alt="Random Image Placed here" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Story 3</h5>
@@ -102,9 +103,9 @@
                     <a href="#" class="badge badge-primary">Terror</a>
                     <a href="#" class="badge badge-dark">Graphic</a>
                 </div>
-            </div>
+            </section>
 
-            <div class="card m-4 story-card">
+            <section class="card border-secondary m-4 story-card">
                 <img src="" alt="Random Image Placed here" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Story 4</h5>
@@ -120,17 +121,16 @@
                     <a href="#" class="badge badge-link">Horror</a>
                     <a href="#" class="badge badge-secondary">Graphic</a>
                 </div>
-            </div>
+            </section>
             
         </div>
     </main>
 
-    <footer>
-        <hr>
+    <footer class="p-4">
         <p>Footer</p>
     </footer>
 
-    <script src="./src/index.js"></script>
-    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/client/src/index.js"></script>
+    <script src="/client/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>

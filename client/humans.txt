@@ -1,0 +1,16 @@
+/* humans.txt — Site maintained by humans */
+
+Team:
+  Developer: [Your Name or Alias]
+  Contact: security@yourdomain.com
+
+Site:
+  Last Updated: 2025-10-13
+  Language: English
+  Technology: HTML, CSS, JavaScript (no frameworks)
+
+Policy:
+  No user data is collected or shared.
+  Automated scraping or indexing is not permitted.
+
+Respect robots.txt and .well-known/security.txt

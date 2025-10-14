@@ -1,0 +1,58 @@
+# robots.txt - Strict anti-crawling policy
+# Last updated: 2025-10-13
+
+# ===============================
+# GLOBAL POLICY — BLOCK EVERYTHING
+# ===============================
+User-agent: *
+Disallow: /
+Crawl-delay: 10
+Noindex: /
+
+# =====================================
+# MAJOR SEARCH ENGINES (explicit blocks)
+# =====================================
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: Yahoo! Slurp
+Disallow: /
+
+User-agent: DuckDuckBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: Applebot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# =====================================
+# OPTIONAL: SIGNAL NO SITEMAP PROVIDED
+# =====================================
+# Sitemap intentionally omitted for privacy.
+# Sitemap: none
+
+# =====================================
+# SECURITY CONTACT REFERENCE
+# =====================================
+Security: /.well-known/security.txt
+
+# =====================================
+# LEGAL NOTICE
+# =====================================
+# This site is private and not intended for indexing, scraping, or automated access.
+# Unauthorized crawling, data harvesting, or automated scanning is prohibited.
+
+
+Sitemap: https://example.com/sitemap.xml
+Security: https://example.com/.well-known/security.txt
