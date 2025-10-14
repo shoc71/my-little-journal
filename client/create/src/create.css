@@ -1,0 +1,29 @@
+.new-card {
+    margin: 1rem;
+    height: auto;
+}
+
+.dark .form-control {
+    background-color: inherit;
+    border-color: var(--gray);
+    color: inherit;
+}
+
+.dark .input-group-text {
+    background-color: var(--dark-accent);
+    border-color: var(--gray);
+    color: var(--light-accent);
+}
+
+.light .form-control {
+    transition: ease-in 0.5s;
+    background-color: inherit;
+    border-color: var(--gray);
+    color: inherit;
+}
+
+.light .input-group-text {
+    background-color: var(--light-accent);
+    border-color: var(--gray);
+    color: var(--dark);
+}

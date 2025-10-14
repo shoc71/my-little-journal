@@ -5,6 +5,8 @@ const authLinks = document.getElementById("auth-links");
 const userInfo = document.getElementById("user-info");
 const welcome = document.getElementById("welcome");
 const logoutBtn = document.getElementById("logout-btn");
+const imageMoonPNG = "https://purepng.com/public/uploads/large/purepng.com-moonnaturelightnightmoon-961524672147abmbw.png"; // Dark mode icon
+const imageSunPNG = "https://cdn-icons-png.flaticon.com/512/169/169367.png"; // Light mode icon
 
 if (username) {
     // User is logged in
@@ -25,7 +27,7 @@ logoutBtn.addEventListener("click", () => {
 
 // darkmode
 const toggleButton = document.getElementById('toggle');
-var imageDarkModeChange = document.getElementById('darkmode')
+var darkModeThemeChange = document.getElementById('darkmode')
 
 toggleButton.addEventListener('click', () => {
     const body = document.body;
@@ -33,11 +35,11 @@ toggleButton.addEventListener('click', () => {
     if (body.classList.contains('dark')) {
         body.classList.remove('dark');
         localStorage.setItem('theme', 'light');
-        imageDarkModeChange.src = "https://cdn-icons-png.flaticon.com/512/169/169367.png"; // Light mode icon
+        darkModeThemeChange.src = imageMoonPNG
     } else {
         body.classList.add('dark');
         localStorage.setItem('theme', 'dark');
-        imageChange.src = "https://purepng.com/public/uploads/large/purepng.com-moonnaturelightnightmoon-961524672147abmbw.png"; // Dark mode icon
+        darkModeThemeChange.src = imageSunPNG
     }
 })
 
@@ -46,9 +48,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     if (savedTheme === 'dark') {
         document.body.classList.add('dark');
-        imageDarkModeChange.src = "https://purepng.com/public/uploads/large/purepng.com-moonnaturelightnightmoon-961524672147abmbw.png"; // Dark mode icon
+        darkModeThemeChange.src = imageSunPNG
     } else {
-        imageDarkModeChange.src = "https://cdn-icons-png.flaticon.com/512/169/169367.png"; // Light mode icon
+        darkModeThemeChange.src = imageMoonPNG
     }
 })
 
