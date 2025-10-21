@@ -1,0 +1,59 @@
+html.dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+html.light {
+  background-color: var(--light-accent);
+  color: var(--dark);
+}
+
+.authi-body {
+  margin: 0;
+  height: 100vh; /* full viewport height */
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+}
+
+.story-card {
+    width: 15rem;
+    height: auto;
+    padding: 4px;
+    /* margin: ; */
+}
+
+.dark .story-card {
+    background-color: var(--dark-accent);
+    border-color: var(--gray);    
+}
+
+.light .story-card {
+    background-color: var(--light-accent);
+    border-color: #000;
+}
+
+.dark .form-control {
+    background-color: inherit;
+    border-color: var(--gray);
+    color: inherit;
+}
+
+.dark .input-group-text {
+    background-color: var(--dark-accent);
+    border-color: var(--gray);
+    color: var(--light-accent);
+}
+
+.light .form-control {
+    transition: ease-in 0.5s;
+    background-color: inherit;
+    border-color: var(--gray);
+    color: inherit;
+}
+
+.light .input-group-text {
+    background-color: var(--light-accent);
+    border-color: var(--gray);
+    color: var(--dark);
+}

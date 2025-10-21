@@ -6,13 +6,23 @@
     --dark-accent: #222;
 }
 
-* {
+/* * {
   transition: background-color ease-in-out 1s;
-}
+} */
 
 .light {
     background-color: var(--light-accent);
     color: var(--dark);
+}
+
+html.dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+html.light {
+  background-color: var(--light-accent);
+  color: var(--dark);
 }
 
 .dark {
@@ -42,11 +52,8 @@ header, main, footer {
     overflow: auto;
 }
 
-
 #toggle {
   font-size: 1.52em;
-  margin: 0;
-  padding: 0;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -54,6 +61,13 @@ header, main, footer {
 }
 
 /* index.html specifics */
+
+.story-card {
+    width: 15rem;
+    height: auto;
+    padding: 4px;
+    /* margin: ; */
+}
 
 .title {
     text-align: center;
@@ -71,14 +85,6 @@ header, main, footer {
     align-items: center;
 }
 
-.authi-body {
-  margin: 0;
-  height: 100vh; /* full viewport height */
-  display: flex;
-  justify-content: center;  /* horizontal center */
-  align-items: center;      /* vertical center */
-}
-
 #auth-links a,
 #user-info button {
     margin-left: 15px;
@@ -93,9 +99,3 @@ header, main, footer {
     border-radius: 2px;
 }
 
-.story-card {
-    width: 15rem;
-    height: auto;
-    padding: 4px;
-    /* margin: ; */
-}

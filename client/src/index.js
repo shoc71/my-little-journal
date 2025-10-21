@@ -29,6 +29,15 @@ logoutBtn.addEventListener("click", () => {
 const toggleButton = document.getElementById('toggle');
 var darkModeThemeChange = document.getElementById('darkmode')
 
+// // Runs immediately before the DOM fully paints
+// (function() {
+//   const root = document.documentElement;
+//   const savedTheme = localStorage.getItem('theme') || 'dark';
+
+//   // Apply saved theme early
+//   root.classList.add(savedTheme);
+// })();
+
 toggleButton.addEventListener('click', () => {
     const body = document.body;
 
@@ -44,7 +53,7 @@ toggleButton.addEventListener('click', () => {
 })
 
 window.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const savedTheme = localStorage.getItem('theme') || 'dark';
 
     if (savedTheme === 'dark') {
         document.body.classList.add('dark');
