@@ -8,7 +8,7 @@
     "dev": "nodemon server/server.js",
     "build": "npm install && npm install --prefix client && npm run build --prefix client",
     "start": "NODE_ENV=production node server/server.js",
-    "clean": "rm -fr ./node_modules && rm -fr ./package-lock.json"
+    "clean:linux": "rm -fr ./node_modules && rm -fr ./package-lock.json"
   },
   "repository": {
     "type": "git",
